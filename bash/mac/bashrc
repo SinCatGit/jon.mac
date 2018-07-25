@@ -1,0 +1,16 @@
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+export PATH=/usr/local/bin:$PATH
+
+# alias shortcut
+
+
+# alians command
+alias ls="ls -G" 
+alias grep="grep --color" 
+
+# for svn
+function svndiff () { svn diff $@ | colordiff | less -R; }
+export SVN_EDITOR=vim

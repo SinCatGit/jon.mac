@@ -1,0 +1,19 @@
+# .bashrc 
+ 
+# Source global definitions 
+if [ -f /etc/bashrc ]; then 
+    . /etc/bashrc 
+fi 
+
+# set env for virtualenvwapper 
+export WORKON_HOME=~/envs
+source /usr/local/bin/virtualenvwrapper.sh
+
+# alians shortcut     
+
+function svndiff () { svn diff $@ | colordiff | less -R; }
+export SVN_EDITOR=vim
+
+# User specific aliases and functions 
+alias ls="ls --color" 
+alias grep="grep --color" 
