@@ -29,7 +29,8 @@ Bundle 'molokai'
 Bundle 'desertedocean.vim'
 
 " project
-Bundle 'taglist.vim'
+" todo: bind taglist
+" Bundle 'taglist.vim'
 Bundle 'ctags.vim'
 Bundle 'The-NERD-tree'
 
