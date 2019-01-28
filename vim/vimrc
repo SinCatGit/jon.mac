@@ -26,7 +26,10 @@ Bundle 'css.vim'
 " coloscheme
 Bundle 'wombat256.vim'
 Bundle 'molokai'
-Bundle 'desertedocean.vim'
+Bundle 'desert.vim'
+
+" scala
+Bundle 'derekwyatt/vim-scala'
 
 " project
 " todo: bind taglist
@@ -95,7 +98,7 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 "配色
-color desertedocean
+color desert
 set background=dark
 
 " 打开文件，返回上次光标位置
