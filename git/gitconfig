@@ -2,21 +2,33 @@
 	name = SinCatGit
 	email = sincat@126.com
 [alias]
-    st = status
-    s = status -sb
-    df = diff --ignore-space-change
-    ci = commit
     co = checkout
-    rb = rebase
-    br = branch
+    cob = checkout -b
+    f = fetch -p
+    ci = commit
     ph = push
     pl = pull
-    f = fetch
+    ba = branch -a
+    bd = branch -d
+    bD = branch -D
+    dc = diff --cached
+    st = status
+    s = status -sb
+    a = add 
+    df = diff --ignore-space-change
+    rb = rebase
+    br = branch
     r = remote
     rv = remote -v
     mg = merge
     dw = diff --word-diff
-    lg = log -p 
+
+    # Complex aliases
+    plog = log --graph --pretty='format:%C(red)%d%C(reset) %C(yellow)%h%C(reset) %ar %C(green)%aN%C(reset) %s'
+    tlog = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    rank = shortlog -sn --no-merges
+    bdm = "!git branch --merged | grep -v '*' | xargs -n 1 git branch -d"
 [color]
     ui = auto
 [core]
